@@ -1,4 +1,8 @@
 spring:
+  session:
+    store-type: jdbc
+  profiles:
+    include: oauth
   datasource:
     hikari:
       jdbc-url: jdbc:h2:mem:testdb;MODE=MYSQL
